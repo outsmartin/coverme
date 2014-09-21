@@ -1,0 +1,3 @@
+module Coverme
+  VERSION = "0.0.1"
+end
