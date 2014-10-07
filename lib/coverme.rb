@@ -12,8 +12,8 @@ module Coverme
     def ship_it(json)
       raise TokenMissingError if !config.token
       project_token = config.token
-      host_uri = config.uri || 'http://coverme.outsmartin.de'
-      uri = URI.parse("#{host_uri}/api/add_run")
+      host_uri = config.uri || 'http://coverme.io'
+      uri = URI.parse("#{host_uri}/api/runs")
 
       body = {
         'run[test]' => json,
@@ -29,15 +29,3 @@ module Coverme
     end
   end
 end
-=begin
-require 'simplecov'
-require 'simplecov-json'
-require 'pry'
-SimpleCov.formatter = SimpleCov::Formatter::JSONFormatter
-SimpleCov.start
-SimpleCov.at_exit do
-  result = SimpleCov.result.format!
-  Coverme.config.token = 'yourtokenhere'
-  Coverme.ship_it(result)
-end
-=end
