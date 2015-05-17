@@ -1,28 +1,14 @@
 # Coverme
 
-TODO: Write a gem description
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'coverme'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install coverme
+This gem is the client for sending data to a coverme server.
 
 ## Usage
 
-TODO: Write usage instructions here
+You can find a usage guide in your coverme project.
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/coverme/fork )
+1. Fork it ( https://github.com/outsmartin/coverme/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
